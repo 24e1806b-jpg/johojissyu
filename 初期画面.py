@@ -1,25 +1,17 @@
 import streamlit as st
 
+
 st.title('鈴木楽器店へようこそ')
 
-
+st.write('')
 
 st.subheader('あなたにぴったりの楽器を提案できます')
 
+st.title('')
+
+questions = ['どんな楽器がほしいですか？詳しく教えてください']
 
 
-st.write('ここを空白にするにはどうすればいいかな')
-
-
-
-
-
-
-
-
-
-
-questions = ["どんな楽器がほしいですか？"]
 
 # 状態管理
 if "current_q" not in st.session_state:
@@ -34,12 +26,19 @@ if st.session_state.current_q < len(questions):
 
     with placeholder.container():
         answer = st.text_input(q, key=f"q{st.session_state.current_q}")
-        if st.button("送信"):
+        
+        col1, col2 = st.columns([8, 1])
+        with col2:
+          if st.button('送信'):
             if answer.strip():
                 st.session_state.answers[q] = answer
                 st.session_state.current_q += 1
                 placeholder.empty()  # 入力バーを消す
                 st.rerun()  # ← ここを変更
 else:
-    st.write('いいですね！')
+    st.write('なるほど。ではいくつか質問するので、自分の理想に近いものを選択してください！' \
+    '良い楽器を紹介しますよ！')
+
+
+
     
