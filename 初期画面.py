@@ -1,13 +1,11 @@
 import streamlit as st
 
 
+
 st.title('鈴木楽器店へようこそ')
-
-st.write('')
-
 st.subheader('あなたにぴったりの楽器を提案できます')
 
-st.title('')
+st.image('Gemini_楽器屋さん.png')
 
 questions = ['どんな楽器がほしいですか？詳しく教えてください']
 
@@ -41,10 +39,5 @@ else:
 
     col1, col2 = st.columns([9, 2])
     with col2:
-      st.button('質問1へ')
-         
-
-
-
-
-    
+      st.link_button('質問1へ', 'http://localhost:8502')
+      
