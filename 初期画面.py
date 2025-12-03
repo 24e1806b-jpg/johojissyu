@@ -2,7 +2,7 @@ import streamlit as st
 
 
 
-st.title('鈴木楽器店へようこそ')
+st.title('奏叔父楽器店へようこそ')
 st.subheader('あなたにぴったりの楽器を提案できます')
 
 st.image('Gemini_楽器屋さん.png')
