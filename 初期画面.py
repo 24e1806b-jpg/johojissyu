@@ -39,5 +39,5 @@ else:
 
     col1, col2 = st.columns([9, 2])
     with col2:
-      st.link_button('質問1へ', 'localhost:8501')
+      st.link_button('質問1へ', 'http://localhost:8501/')
       
