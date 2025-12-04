@@ -39,5 +39,5 @@ else:
 
     col1, col2 = st.columns([9, 2])
     with col2:
-      st.link_button('質問1へ', 'johojissyu/質問/質問1.py')
+      st.link_button('質問1へ', 'streamlit/johojissyu/質問/質問1.py')
       
