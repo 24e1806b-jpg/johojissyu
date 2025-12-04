@@ -1,6 +1,6 @@
 import streamlit as st
 
-#左のサイドバーを隠す呪文
+#左のサイドバーを隠す呪文ね
 
 st.set_page_config(initial_sidebar_state="collapsed")
 hide_nav = """
